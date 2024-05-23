@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+   #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+          
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000; /* Ensures the navbar is above other elements */
+        }
+
+    @media (max-width: 768px) {
+      #navbar h1 {
+        font-size: 1.2em;
+    }
+      
+    }    
+</style>
+<body>
+  <header>My Porfolio</header>
+  <main>
+   <nav id="navbar">
+    <div> <a href="https://www.freecodecamp.org/Vernie_Enriquez">FreeCodeCamp Profile</a></div>
+    <div> <a id="profile-link" href="https://vlade7887.github.io/webportfolio/" target="_blank">Online Porfolio</a></div>
+    <div><a href="#">None</a></div>
+   </nav>
+    <section id="welcome-section">
+      <h1>Verni B. Enriquez</h1>
+      <img src="enriquez.jpg" alt="vernie-photo" height="100px" width="100px">   
+     <div> 
+      <a href="https://www.freecodecamp.org/Vernie_Enriquez">Free code camp profile</a>
+    </div>
+    </section>
+
+    <section id="projects">
+      <div class="project-tile">
+        <h2>My Project </h2>
+        <a href="http://zuitt-bootcamp-prod-364-6633-enriquez.s3-website.us-east-1.amazonaws.com/">E-Commerce Project</a>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
