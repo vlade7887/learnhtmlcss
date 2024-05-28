@@ -123,8 +123,9 @@
 
 // function nextInLine(arr, item) {
 //   // Only change code below this line
-
-//   return item;
+//   arr.push(item);
+//   const removed = arr.shift();
+//   return removed;
 //   // Only change code above this line
 // }
 
@@ -136,19 +137,171 @@
 // console.log(nextInLine(testArr, 6));
 // console.log("After: " + JSON.stringify(testArr));
 
-function outerFunction(){
- var outerVariable = "Hello";
 
-  function closureFn(){
-    console.log(outerVariable);
+// function test(myCondition) {
+//   if (myCondition) {
+//     return "It was true";
+//   }
+//   return "It was false";
+// }
+
+// const result1 = test(true);
+// const result2 = test(false);
+// console.log(result2)
+
+
+// function trueOrFalse(wasThatTrue) {
+
+//   if(wasThatTrue){
+//     return "Yes, that was true";
+//   }
+//     return "No, that was false";
+
+// }
+
+// const result3 = trueOrFalse(false);
+// console.log(result3)
+
+
+
+// function testEqual(val) {
+//   if (val == 12) { 
+//     return "Equal";
+//   }
+//   return "Not Equal";
+// }
+
+// const equal = testEqual(12);
+// console.log(equal)
+
+
+
+// function compareEquality(a, b) {
+//   if (a === b) { 
+//     return "Equal";
+//   }
+//   return "Not Equal";
+// }
+
+// const compare = compareEquality(10, "10");
+// console.log(compare)
+
+
+
+//  function testNotEqual(val) {
+//   if (val!=11) {
+//     return "Not Equal";
+//   }
+//   return "Equal";
+// }
+
+// const notEqual = testNotEqual(10);
+// console.log(notEqual)
+
+
+// function testStrictNotEqual(val) {
+//   if (val!==10) {
+//     return "Not Equal";
+//   }
+//   return "Equal";
+// }
+
+// const strictNotEqual = testStrictNotEqual(10);
+// console.log(strictNotEqual)
+
+
+// /////////////////////////////////////////
+// function testGreaterThan(val) {
+//   if (val > 100) { 
+//     return "Over 100";
+//   }
+
+//   if (val > 10)  {  
+//     return "Over 10";
+//   }
+
+//   return "10 or Under";
+// }
+
+// console.log(testGreaterThan(10));
+
+
+
+
+
+// function testLogicalAnd(val) {
+
+// if(val <= 50 && val >= 25){
+//   return "Yes" 
+// }
+//   return "No";
+// }
+
+// console.log(testLogicalAnd(26));
+
+
+// ///OR/////
+
+// function testLogicalOr(val) {
+
+
+//   if (val < 10 || val >20) {
+//     return "Outside";
+//   }
+
+
+//   return "Inside";
+// }
+
+// console.log(testLogicalOr(19));
+
+
+
+// //else if//
+
+// function testSize(num) {
+//  if(num < 5){
+//   return "Tiny"
+//  }
+//  else if(num < 10){
+//   return "Small"
+//  }
+//  else if(num < 15){
+//   return "Medium"
+//  }
+//  else if(num < 20){
+//   return "Large"
+//  }
+//  else if(num >= 20){
+//   return "Huge"
+//  }
+
+// }
+
+// console.log(testSize(100));
+
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  if (strokes == 1) {
+    return names[0];
+  } else if (strokes <= par - 2) {
+    return names[1];
+  } else if (strokes === par - 1) {
+    return names[2];
+  } else if (strokes === par) {
+    return names[3];
+  } else if (strokes === par + 1) {
+    return names[4];
+  } else if (strokes === par + 2) {
+    return names[5];
+  } else {
+    return names[6];
   }
-  outerVariable = "Goodbye";
-  return closureFn;
 }
 
 
-var closure = outerFunction();
-closure();
+console.log(golfScore(3, 2));
 
 </script>
 </body>
