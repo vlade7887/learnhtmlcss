@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+
+
+// function caseInSwitch(val) {
+//   let answer = "";
+  
+//   switch (val){
+//     case 1:
+//     answer = "alpha";
+//     break;
+
+//     case 2:
+//     answer = "beta";
+//     break;
+
+//     case 3:
+//     answer = "gamma";
+//     break;
+
+//     case 4:
+//     answer = "delta";
+//     break;
+
+//     default:
+//     answer = "hello";
+//     break;
+//   }
+
+
+
+//   return answer;
+// }
+
+// console.log(caseInSwitch(6));
+
+
+// function switchOfStuff(val) {
+//   let answer = "";
+//   // Only change code below this line
+//   switch (val){
+//     case "a":
+//     answer = "apple";
+//     break;
+
+//     case "b":
+//     answer = "bird";
+//     break;
+
+//     case "c":
+//     answer = "cat";
+//     break;
+
+//     default:
+//     answer = "stuff";
+//     break;
+//   }
+
+
+//   // Only change code above this line
+//   return answer;
+// }
+
+// const result = switchOfStuff("b");
+// console.log(result);
+
+// function sequentialSizes(val) {
+//   let answer = "";
+//   switch (val){
+//     case 1:
+//     case 2:
+//     case 3:
+//     answer = "Low"; 
+//     break;  
+    
+//     case 4:
+//     case 5:
+//     case 6:
+//     answer = "Mid"; 
+//     break;   
+
+//     case 7:
+//     case 8:
+//     case 9:
+//     answer = "High"; 
+//     break;    
+//   }
+
+
+//   return answer;
+// }
+
+// const result = sequentialSizes(8);
+// console.log(result)
+
+
+
+// function chainToSwitch(val) {
+//   let answer = "";
+
+
+//   switch (val){
+//     case "bob":
+//     answer = "Marley";
+//     break;
+
+//     case 42:
+//     answer = "The Answer";
+//     break;
+
+//     case 1:
+//     answer = "There is no #1";
+//     break;
+
+//     case 99:
+//     answer = "Missed me by this much!";
+//     break;
+
+//     case 7:
+//     answer = "Ate Nine";
+//     break;
+  
+//   }
+
+
+
+//   return answer;
+// }
+
+// const result = chainToSwitch(99);
+// console.log(result)
+
+
+
+
+
+////////Returning Boolean Values from Functions////////////////////
+
+function isLess(a, b) {
+
+return a < b;
+
+}
+
+console.log(isLess(10, 15));
+
+
+
+function myFun() {
+  console.log("Hello");
+  return "World";
+  console.log("byebye")
+}
+
+console.log(myFun());
+
+
+
+// Setup
+function abTest(a, b) {
+  
+  if (a < 0 || b < 0){
+   return undefined;
+  }
+ else {
+ 
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+}
+console.log(abTest(3,-3));
+
+  </script>
+</body>
+</html>
