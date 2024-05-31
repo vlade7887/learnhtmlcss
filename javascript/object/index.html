@@ -7,23 +7,23 @@
 </head>
 <body>
   <script>
-      const cat = {
-        "name": "Whiskers",
-        "legs": 4,
-        "tails": 1,
-        "enemies": ["Water", "Dogs"]
-      };
+      // const cat = {
+      //   "name": "Whiskers",
+      //   "legs": 4,
+      //   "tails": 1,
+      //   "enemies": ["Water", "Dogs"]
+      // };
 
-      console.log(cat)
+      // console.log(cat)
 
 
-      const anotherObject = {
-        make: "Ford",
-        5: "five",
-        "model": "focus"
-      };
+      // const anotherObject = {
+      //   make: "Ford",
+      //   5: "five",
+      //   "model": "focus"
+      // };
 
-      console.log(anotherObject)
+      // console.log(anotherObject)
 
 
 //       const myDog = {
@@ -53,32 +53,125 @@
 // console.log(entreeValue + " "+ drinkValue)
 
 
-const dogs = {
-  Fido: "Mutt",
-  Hunter: "Doberman",
-  Snoopie: "Beagle"
-};
+// const dogs = {
+//   Fido: "Mutt",
+//   Hunter: "Doberman",
+//   Snoopie: "Beagle"
+// };
 
-const myDog = "Hunter";
-const myBreed = dogs[myDog];
-console.log(myBreed);
-
-
+// const myDog = "Hunter";
+// const myBreed = dogs[myDog];
+// console.log(myBreed);
 
 
+// // Setup
+// const testObj = {
+//   12: "Namath",
+//   16: "Montana",
+//   19: "Unitas"
+// };
 
 
-// Setup
-const testObj = {
-  12: "Namath",
-  16: "Montana",
-  19: "Unitas"
-};
+// const playerNumber = 16;  
+// const player = testObj[playerNumber];
+// console.log(player)  
+
+// const ourDog = {
+//   "name": "Camper",
+//   "legs": 4,
+//   "tails": 1,
+//   "friends": ["everything!"]
+// };
+
+// console.log(ourDog)
+// ourDog["name"] = "Happy Camper"
+// console.log(ourDog)
+// ourDog.bark = "Aw AW";
+// console.log(ourDog)
 
 
-const playerNumber = 16;  
-const player = testObj[playerNumber];
-console.log(player)   
+// // Setup
+// const myDog = {
+//   "name": "Coder",
+//   "legs": 4,
+//   "tails": 1,
+//   "friends": ["freeCodeCamp Campers"]
+// };
+
+// myDog.name = "Happy Coder";
+// console.log(myDog)
+// myDog.bark = "woof";
+// console.log(myDog)
+// myDog.friends.push("lol") 
+// console.log(myDog)
+
+
+// delete myDog.tails;
+// console.log(myDog)
+
+
+// // Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  
+const article = {
+     "alpha" : "Adams",
+     "bravo" : "Boston",
+     "charlie" : "Chicago",
+     "delta" : "Denver",
+     "echo" : "Easy",
+     "foxtrot" : "Frank"
+    
+  }
+  console.log(article)
+  result = article[val];
+
+return result;
+
+}
+
+console.log(phoneticLookup("charlie"));
+
+
+
+
+
+// function checkForProperty(object, property) {
+
+//   return object.hasOwnProperty(property);
+// }
+
+
+// console.log(checkForProperty({ top: 'hat', bottom: 'pants' }, 'top')); // true
+// checkForProperty({ top: 'hat', bottom: 'pants' }, 'middle'); // false
+
+///////////////////////////////////////
+
+
+
+function checkObj(obj, checkProp) {
+
+
+ const data = obj;
+ if (obj.hasOwnProperty(checkProp) === false){
+  return "Not Found"
+ }
+ 
+
+ return data[checkProp];
+
+
+}
+
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift"));
+
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet"));
+
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house"));
+console.log(checkObj({city: "Seattle"}, "city"))
+
+
   </script>
 </body>
 </html>
