@@ -111,66 +111,182 @@
 
 
 // // Setup
-function phoneticLookup(val) {
-  let result = "";
+// function phoneticLookup(val) {
+//   let result = "";
 
   
-const article = {
-     "alpha" : "Adams",
-     "bravo" : "Boston",
-     "charlie" : "Chicago",
-     "delta" : "Denver",
-     "echo" : "Easy",
-     "foxtrot" : "Frank"
+// const article = {
+//      "alpha" : "Adams",
+//      "bravo" : "Boston",
+//      "charlie" : "Chicago",
+//      "delta" : "Denver",
+//      "echo" : "Easy",
+//      "foxtrot" : "Frank"
     
-  }
-  console.log(article)
-  result = article[val];
+//   }
+//   console.log(article)
+//   result = article[val];
 
-return result;
+// return result;
 
-}
-
-console.log(phoneticLookup("charlie"));
-
-
-
-
-
-// function checkForProperty(object, property) {
-
-//   return object.hasOwnProperty(property);
 // }
 
-
-// console.log(checkForProperty({ top: 'hat', bottom: 'pants' }, 'top')); // true
-// checkForProperty({ top: 'hat', bottom: 'pants' }, 'middle'); // false
-
-///////////////////////////////////////
+// console.log(phoneticLookup("charlie"));
 
 
 
-function checkObj(obj, checkProp) {
 
 
- const data = obj;
- if (obj.hasOwnProperty(checkProp) === false){
-  return "Not Found"
- }
+// // function checkForProperty(object, property) {
+
+// //   return object.hasOwnProperty(property);
+// // }
+
+
+// // console.log(checkForProperty({ top: 'hat', bottom: 'pants' }, 'top')); // true
+// // checkForProperty({ top: 'hat', bottom: 'pants' }, 'middle'); // false
+
+// ///////////////////////////////////////
+
+
+
+// function checkObj(obj, checkProp) {
+
+
+//  const data = obj;
+//  if (obj.hasOwnProperty(checkProp) === false){
+//   return "Not Found"
+//  }
  
 
- return data[checkProp];
+//  return data[checkProp];
 
 
-}
+// }
 
-console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift"));
+// console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift"));
 
-console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet"));
+// console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet"));
 
-console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house"));
-console.log(checkObj({city: "Seattle"}, "city"))
+// console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house"));
+// console.log(checkObj({city: "Seattle"}, "city"))
 
+
+
+// const myMusic = [
+//   {
+//     "artist": "Billy Joel",
+//     "title": "Piano Man",
+//     "release_year": 1973,
+//     "formats": [
+//       "CD",
+//       "8T",
+//       "LP"
+//     ],
+//     "gold": true
+//   },
+//   {
+//     "artist": "Michael Jackson",
+//     "title" : "baby baby",
+//     "release_year" : 1990
+//   }
+
+// ];
+
+// console.log(myMusic)
+
+
+
+
+const ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+
+
+console.log(ourStorage.cabinet["top drawer"].folder2)
+console.log(ourStorage.desk.drawer);
+
+
+
+
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents)
+
+
+
+
+
+const ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+
+console.log(ourPets[0].names[1]);
+console.log(ourPets[1].names[0]);
+
+
+
+
+
+
+
+
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+const secondTree = myPlants[1].list[1];
+console.log(secondTree)
 
   </script>
 </body>
