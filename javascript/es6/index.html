@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    ////////////////////////////
+    //Compare Scopes of the var and let Keywords//
+
+//     var numArray = [];
+// for (var i = 0; i < 3; i++) {
+//   numArray.push(i);
+// }
+// console.log(numArray);
+// console.log(i);
+
+// var numArray = [];
+// var i;
+// for (i = 0; i < 3; i++) {
+//   numArray.push(i);
+// }
+// console.log(numArray);
+// console.log(i);
+
+
+// let printNumTwo;
+// for (let i = 0; i < 3; i++) {
+//   if (i === 2) {
+//     printNumTwo = function() {
+//       return i;
+//     };
+//   }
+// }
+// console.log(printNumTwo());
+// console.log(i);
+
+
+// function checkScope() {
+//   let i = 'function scope';
+//   if (true) {
+//   let i = 'block scope';
+//     console.log('Block scope i is: ', i);
+//   }
+//   console.log('Function scope i is: ', i);
+//   return i;
+// }
+
+// console.log(checkScope())
+
+//////////////////////////// mutate an array declared with const
+// const s = [5, 6, 7];
+// // s = [1, 2, 3];
+// s[2] = 45;
+// console.log(s);
+
+
+const s = [5, 7, 2];
+function editInPlace() {
+ s[0] = 2;
+ s[1] = 5;
+ s[2] = 7;
+  return s;
+}
+
+
+
+console.log(editInPlace());
+
+
+
+////////////////////////Prevent Object Mutation
+
+let obj = {
+  name:"FreeCodeCamp",
+  review:"Awesome"
+};
+
+Object.freeze(obj);
+obj.review = "bad";
+obj.newProp = "Test";
+console.log(obj); 
+
+
+
+
+function freezeObj() {
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+  Object.freeze(MATH_CONSTANTS);
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch(ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+console.log(PI)
+  </script>
+</body>
+</html>

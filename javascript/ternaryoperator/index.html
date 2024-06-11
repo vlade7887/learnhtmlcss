@@ -7,61 +7,79 @@
 </head>
 <body>
   <script>
-    function findGreater(a, b) {
-  if(a > b) {
-    return "a is greater";
-  }
-  else {
-    return "b is greater or equal";
-  }
-}
+//     function findGreater(a, b) {
+//   if(a > b) {
+//     return "a is greater";
+//   }
+//   else {
+//     return "b is greater or equal";
+//   }
+// }
 
-console.log(findGreater(1,2))
-
-
-
-
-function checkEqual(a, b) {
-  return a === b ? "Equal" : a > b ? "a greater than b" : "b greater than a";
-}
-
-console.log(checkEqual(1, 2));
-console.log(checkEqual(1, 1));
+// console.log(findGreater(1,2))
 
 
 
-function checkSign(num) {
-  return num === 0 ? "zero" : num > 0 ? "positive" : "negative"; 
-}
 
-console.log(checkSign(0));
+// function checkEqual(a, b) {
+//   return a === b ? "Equal" : a > b ? "a greater than b" : "b greater than a";
+// }
+
+// console.log(checkEqual(1, 2));
+// console.log(checkEqual(1, 1));
 
 
 
-function countup(n) {
-  if (n < 1) {
+// function checkSign(num) {
+//   return num === 0 ? "zero" : num > 0 ? "positive" : "negative"; 
+// }
+
+// console.log(checkSign(0));
+
+
+
+// function countup(n) {
+//   if (n < 1) {
+//     return [];
+//   } else {
+//     const countArray = countup(n - 1);
+//     countArray.push(n);
+//     return countArray;
+//   }
+// }
+// console.log(countup(5));
+
+
+
+// // Only change code below this line
+// function countdown(n){
+//   if (n < 1) {
+//     return [];
+//   } else {
+//     const countArray = countdown(n - 1);
+//     countArray.unshift(n);
+//   return countArray;
+// }
+// }
+// console.log(countdown(5))
+
+
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
     return [];
   } else {
-    const countArray = countup(n - 1);
-    countArray.push(n);
-    return countArray;
+    const numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
   }
 }
-console.log(countup(5));
+
+const result = rangeOfNumbers(1, 5)
+console.log(result)
+const result2 = rangeOfNumbers(5, 8);
+console.log(result2)
 
 
-
-// Only change code below this line
-function countdown(n){
-  if (n < 1) {
-    return [];
-  } else {
-    const countArray = countdown(n - 1);
-    countArray.unshift(n);
-  return countArray;
-}
-}
-console.log(countdown(5))
 </script>
 </body>
 </html>
